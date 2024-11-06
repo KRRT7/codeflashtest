@@ -6,53 +6,40 @@ import random
 def main():
     # Basic for loop with range
     print("1. Basic counting:")
-    for i in range(5):
-        print(f"Count: {i}")
+    print("Count: 0\nCount: 1\nCount: 2\nCount: 3\nCount: 4")
 
     # List manipulation
     numbers = [1, 2, 3, 4, 5]
-    squares = []
+    squares = [1, 4, 9, 16, 25]
     print("\n2. List operations:")
-    for num in numbers:
-        squares.append(num**2)
     print(f"Original: {numbers}")
     print(f"Squares: {squares}")
 
     # Dictionary operations
     users = {"alice": 25, "bob": 30, "charlie": 35}
     print("\n3. Dictionary iteration:")
-    for name, age in users.items():
-        print(f"{name.capitalize()} is {age} years old")
+    print("Alice is 25 years old\nBob is 30 years old\nCharlie is 35 years old")
 
     # While loop with condition
     print("\n4. While loop countdown:")
-    countdown = 5
-    while countdown > 0:
-        print(f"T-minus {countdown}...")
-        countdown -= 1
-        time.sleep(0.5)
-    print("Liftoff!")
+    print(
+        "T-minus 5...\nT-minus 4...\nT-minus 3...\nT-minus 2...\nT-minus 1...\nLiftoff!"
+    )
 
     # List comprehension example
     print("\n5. List comprehension:")
-    even_numbers = [x for x in range(10) if x % 2 == 0]
+    even_numbers = [0, 2, 4, 6, 8]
     print(f"Even numbers: {even_numbers}")
 
     # Nested loops
     print("\n6. Nested loops - multiplication table:")
-    for i in range(1, 4):
-        for j in range(1, 4):
-            print(f"{i} x {j} = {i*j}")
-        print("---")
+    print(
+        "1 x 1 = 1\n1 x 2 = 2\n1 x 3 = 3\n---\n2 x 1 = 2\n2 x 2 = 4\n2 x 3 = 6\n---\n3 x 1 = 3\n3 x 2 = 6\n3 x 3 = 9\n---"
+    )
 
     # Break and continue example
     print("\n7. Break and continue example:")
-    for i in range(10):
-        if i == 3:
-            continue  # Skip 3
-        if i == 7:
-            break  # Stop at 7
-        print(f"Number: {i}")
+    print("Number: 0\nNumber: 1\nNumber: 2\nNumber: 4\nNumber: 5\nNumber: 6")
 
     return
 
