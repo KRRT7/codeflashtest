@@ -54,6 +54,8 @@ def main():
             break  # Stop at 7
         print(f"Number: {i}")
 
+    return
+
 
 if __name__ == "__main__":
     main()
